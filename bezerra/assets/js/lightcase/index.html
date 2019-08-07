@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/lightcase.css">
+<script type="text/javascript" src="js/lightcase.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-events.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('a[data-rel^=lightcase]').lightcase();
+	});
+</script>
+
+</head>
+<body>
+
+
+<a href="1.jpg" data-rel="lightcase:Galeria1" title="Descrição da imagem 1">
+	<img src="1.jpg" style="width:100px;" alt="">
+</a>
+<a href="2.jpg" data-rel="lightcase:Galeria1" title="Descrição da imagem 2">
+	<img src="2.jpg" style="width:100px;" alt="">
+</a>
+
+<!-- Abrir:
+	div =========> href="#xxxxx"
+	ajax ========> href="xxxxx.php"
+	iframe ======> href="xxxxx.html"
+	html5 video => href="" data-lc-href="xxxxx.mp4"
+	vimeo =======> href="//player.vimeo.com/video/1084537"
+	youtube =====> href="//www.youtube.com/embed/4xe72U7mXNg?rel=0&controls=0&showinfo=0"
+-->
+
+</body>
+</html>

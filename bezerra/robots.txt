@@ -1,0 +1,14 @@
+User-agent: *
+Disallow:
+User-agent: *
+Allow:
+User-agent: Googlebot
+Allow:
+User-agent: Googlebot-Image
+Allow:
+User-agent: Mediapartners-Google
+Allow:
+User-agent: Adsbot-Google
+Allow: 
+
+Sitemap: https://www.fundapba.com/sitemap.xml

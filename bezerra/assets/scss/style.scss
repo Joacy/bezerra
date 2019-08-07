@@ -1,0 +1,33 @@
+/* Form Validate */
+.form-group {
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+.form-group label.error {
+  position: absolute;
+  top: 35px;
+  right: 25px;
+  width: auto;
+  font-size: 11px;
+  color: #d50000;
+  text-align: right;
+}
+
+/* Form AjaxForm */
+.ajaxForm .ajaxForm-alert {
+  padding: 10px;
+  margin-top: 14px;
+  color: #fff;
+  background-color: #f57f17;
+  border-left: 3px solid #bc5100;
+}
+
+.ajaxForm .ajaxForm-alert.ajaxForm-alert--error {
+  background-color: #c62828;
+  border-left-color: #8e0000;
+}
+
+.ajaxForm .ajaxForm-alert.ajaxForm-alert--sucess {
+  background-color: #2e7d32;
+  border-left-color: #005005;
+}

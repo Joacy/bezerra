@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<link href="css/lightgallery.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/picturefill.min.js"></script>
+	<script src="js/lightgallery-all.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/lg-thumbnail.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $('#lightgallery').lightGallery({
+		    thumbnail:true
+	    });
+
+	    $('.lightgallery2').lightGallery({
+		    thumbnail: true,
+            exThumbImage: 'data-exthumbimage'
+	    });
+	});
+	</script>
+
+</head>
+<body>
+
+<div id="lightgallery">
+  <a href="1.jpg">
+    <img src="1.jpg" style="width:100px;" />
+  </a>
+  <a href="2.jpg">
+    <img src="2.jpg" style="width:100px;" />
+  </a>
+</div>
+
+<br><br>
+
+<div class="lightgallery2">
+  <a href="1.jpg" data-exthumbimage="1.jpg">
+    <img src="1.jpg" style="width:100px;" />
+  </a>
+  <a href="2.jpg" data-exthumbimage="2.jpg" style="display:none;"></a>
+</div>
+
+
+
+</body>
+</html>

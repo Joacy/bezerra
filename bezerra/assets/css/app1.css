@@ -273,15 +273,18 @@ header {
 
 @media screen and (max-width: 575px) {
   header nav.navbar {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     padding: 15px; } }
 
 #inicio {
   background: #f9f9f9; }
-  #inicio .owl-carousel .item img {
-    height: calc(100vh - 116px);
+  #inicio .owl-carousel .item {
     width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover; }
+    height: auto; }
+    #inicio .owl-carousel .item img {
+      width: 100%;
+      height: auto; }
   #inicio .owl-carousel div.owl-nav {
     display: none; }
   #inicio .owl-carousel div.owl-dots .owl-dot {

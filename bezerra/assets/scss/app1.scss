@@ -346,6 +346,7 @@ header {
 @media screen and (max-width: 575px) {
   header {
     nav.navbar {
+      box-sizing: border-box;
       padding: 15px;
     }
   }
@@ -372,10 +373,12 @@ header {
 
   .owl-carousel {
     .item {
+      width: 100%;
+      height: auto;
+
       img {
-        height: calc(100vh - 116px);
         width: 100%;
-        object-fit: cover;
+        height: auto;
       }
     }
 

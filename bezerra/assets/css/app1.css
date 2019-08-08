@@ -271,6 +271,10 @@ header {
               margin-right: 5px;
               fill: #1a935e; } }
 
+@media screen and (max-width: 575px) {
+  header nav.navbar {
+    padding: 15px; } }
+
 #inicio {
   background: #f9f9f9; }
   #inicio .owl-carousel .item img {

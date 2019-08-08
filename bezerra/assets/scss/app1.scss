@@ -320,34 +320,87 @@ header {
   }
 }
 #inicio {
-  background: url("/assets/image/Banner.jpg") center, #f9f9f9;
-  background-size: cover;
-  height: calc(100vh - 106px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  //background: url("/assets/image/Banner.jpg") center, #f9f9f9;
+  //background-size: cover;
+  background: #f9f9f9;
 
-  .tag-titulo-banner {
-    color: #5cad88;
-    line-height: normal;
-    margin-bottom: 25px;
-  }
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
 
-  a.botao-vermelho {
-    color: #ffffff;
+  // .tag-titulo-banner {
+  //   color: #5cad88;
+  //   line-height: normal;
+  //   margin-bottom: 25px;
+  // }
+
+  // a.botao-vermelho {
+  //   color: #ffffff;
+  // }
+
+  .owl-carousel {
+    display: flex;
+    align-items: center;
+
+    .item {
+      display: flex;
+      align-items: center;
+      height: calc(100vh -116px);
+      width: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    div.owl-nav {
+      display: none;
+    }
+
+    div.owl-dots {
+      .owl-dot {
+        display: none;
+      }
+    }
   }
 }
 
 #sobre {
   background: #ffffff;
   padding: 50px 0px;
+  overflow: hidden;
 
   .col-12.col-lg-6 {
     margin: 30px 0px;
   }
 
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+
+  .topo-esquerdo {
+    position: absolute;
+    top: 55px;
+    left: -55px;
+    z-index: 0;
+  }
+  .baixo-esquerdo {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    left: -120px;
+  }
+  .topo-direito {
+    position: absolute;
+    top: 25px;
+    right: -210px;
+    z-index: 0;
+  }
   .tag-secao {
-    color: #ED2129;
+    color: #ed2129;
     margin-bottom: 10px;
     line-height: 1.4;
     letter-spacing: 1.62px;
@@ -434,8 +487,17 @@ header {
     z-index: 0;
   }
 
+  .baixo-esquerdo {
+    position: absolute;
+    bottom: 100px;
+    z-index: 0;
+    left: -50px;
+  }
+
   .container {
     text-align: center;
+    position: relative;
+    z-index: 10;
 
     .tag-subtitulo {
       color: #ffffff;
@@ -525,16 +587,6 @@ header {
       color: #ffffff;
     }
   }
-
-  .container:before {
-    content: url("/assets/svg/Grupo 34.svg");
-    position: absolute;
-    left: 15%;
-    bottom: 135px;
-    height: 15%;
-    width: auto;
-    z-index: 0;
-  }
 }
 
 #servicos {
@@ -585,6 +637,18 @@ header {
 #clientes {
   background: #f9f9f9;
   padding: 50px 0px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  .meio-direita {
+    position: absolute;
+    z-index: 0;
+    right: -100px;
+    height: 100%;
+  }
 
   .tag-subtitulo {
     color: #2d5b48;
@@ -592,6 +656,18 @@ header {
     text-align: center;
     margin-bottom: 50px;
     font-weight: 700;
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+
+  .topo-esquerda {
+    position: absolute;
+    z-index: 0;
+    top: 35px;
+    left: -60px;
   }
 
   .owl-carousel {
@@ -651,6 +727,7 @@ header {
 #fique-por-dentro {
   background: #ffffff;
   padding: 50px 0px;
+  overflow: hidden;
 
   .tag-subtitulo {
     color: #2d5b48;
@@ -660,14 +737,44 @@ header {
     font-weight: 700;
   }
 
-  .imagens {
-    display: grid;
-    grid-template-columns: repeat(6, 2fr);
-    grid-gap: 5px;
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+
+  .topo-direita {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    right: -115px;
+  }
+
+  .owl-carousel {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
     margin-bottom: 50px;
 
-    img {
-      width: 100%;
+    .item {
+      display: flex;
+      align-items: center;
+      width: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    div.owl-nav {
+      display: none;
+    }
+
+    div.owl-dots {
+      .owl-dot {
+        display: none;
+      }
     }
   }
 
@@ -706,8 +813,37 @@ header {
   padding: 50px 0px;
   background: #fcfcfc;
   position: relative;
+  overflow: hidden;
 
-  .row:before {
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+
+  .meio-esquerda {
+    position: absolute;
+    z-index: 0;
+    left: -80px;
+    background: transparent;
+  }
+
+  .nos-encontre {
+    position: absolute;
+    z-index: 0;
+    top: 65px;
+    left: -125px;
+    background: transparent;
+  }
+
+  .lado-formulario {
+    position: absolute;
+    z-index: 0;
+    top: 110px;
+    right: -130px;
+    background: transparent;
+  }
+
+  .fundo-verde:before {
     content: " ";
     background-image: linear-gradient(321deg, #19784e, #0b5e39);
     display: block;
@@ -724,7 +860,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    z-index: 1;
+    z-index: 11;
   }
 
   .coluna1 {

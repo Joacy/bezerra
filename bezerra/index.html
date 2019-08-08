@@ -162,7 +162,18 @@
   </header>
 
   <section id="inicio">
-    <div class="container">
+    <div id="slide-inicio" class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="assets/image/Grupo 41.png">
+      </div>
+      <div class="item">
+        <img src="assets/image/Grupo 41.png">
+      </div>
+      <div class="item">
+        <img src="assets/image/Grupo 41.png">
+      </div>
+    </div>
+    <!--<div class="container">
       <div class="row">
         <div class="col-12 col-lg-7">
           <h1 class="tag-titulo-banner">ENTRE DURABILIDADE E CONFORTO, ESCOLHA OS DOIS</h1>
@@ -172,11 +183,14 @@
 
         </div>
       </div>
-    </div>
+    </div>-->
   </section>
 
   <section id="sobre">
     <div class="container">
+      <img class="topo-esquerdo" src="assets/svg/Caminho 91.svg">
+      <img class="baixo-esquerdo" src="assets/svg/Grupo 31.svg">
+      <img class="topo-direito" src="assets/svg/Grupo 32.svg">
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="">
@@ -202,6 +216,7 @@
     <img class="canto" src="assets/svg/Grupo 40.svg">
 
     <div class="container">
+      <img class="baixo-esquerdo" src="assets/svg/Grupo 34.svg">
       <h1 class="tag-subtitulo">PRODUTOS</h1>
       <div id="owl-produtos" class="owl-carousel owl-theme">
         <div class="item">
@@ -366,7 +381,9 @@
   </section>
 
   <section id="clientes">
+    <img class="d-none d-xl-block meio-direita" src="assets/svg/Grupo 38.svg">
     <div class="container">
+      <img class="topo-esquerda" src="assets/svg/Grupo 33.svg">
       <h2 class="tag-subtitulo">CLIENTES</h2>
       <div id="owl-clientes" class="owl-carousel owl-theme">
 
@@ -408,15 +425,35 @@
 
   <section id="fique-por-dentro">
     <div class="container">
+      <img class="topo-direita" src="assets/svg/Grupo 35.svg">
       <h2 class="tag-subtitulo">FIQUE POR DENTRO!</h2>
 
-      <div class="imagens">
-        <img src="assets/image/1 (2).png">
-        <img src="assets/image/2.png">
-        <img src="assets/image/3.png">
-        <img src="assets/image/4.png">
-        <img src="assets/image/5.png">
-        <img src="assets/image/Sem Título-1.png">
+      <div id="owl-instagram" class="owl-carousel owl-theme">
+
+        <div class="item">
+          <img src="assets/image/1 (2).png">
+        </div>
+
+        <div class="item">
+          <img src="assets/image/2.png">
+        </div>
+
+        <div class="item">
+          <img src="assets/image/3.png">
+        </div>
+
+        <div class="item">
+          <img src="assets/image/4.png">
+        </div>
+
+        <div class="item">
+          <img src="assets/image/5.png">
+        </div>
+
+        <div class="item">
+          <img src="assets/image/Sem Título-1.png">
+        </div>
+
       </div>
 
       <div class="linha-instagram">
@@ -429,10 +466,14 @@
   </section>
 
   <section id="contato">
+    <div class="fundo-verde"></div>
+    <img class="d-none d-xl-block meio-esquerda" src="assets/svg/Grupo 39.svg">
     <div class="container">
+      <img class="lado-formulario" src="assets/svg/Grupo 37.svg">
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="coluna1">
+            <img class="nos-encontre" src="assets/svg/Grupo 36.svg">
             <h1 class="tag-titulo">
               Nos<br>encontre
             </h1>
@@ -662,6 +703,61 @@
           items: 4,
           nav: true,
           loop: true,
+          navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"]
+        }
+      }
+    })
+  </script>
+
+  <script type="text/javascript">
+    $('#owl-instagram').owlCarousel({
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 2500,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: true,
+          navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"]
+        },
+        600: {
+          items: 3,
+          nav: false,
+          navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"]
+        },
+        1000: {
+          items: 5,
+          nav: false,
+          navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"]
+        },
+        1200: {
+          items: 6,
+          nav: true,
+          loop: true,
+          navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"]
+        }
+      }
+    })
+  </script>
+
+  <script type="text/javascript">
+    $('#slide-inicio').owlCarousel({
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 2500,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+          navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"]
+        },
+        600: {
+          items: 1,
+          nav: false,
           navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"]
         }
       }

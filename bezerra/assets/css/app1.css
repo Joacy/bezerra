@@ -253,33 +253,59 @@ header {
               fill: #1a935e; } }
 
 #inicio {
-  background: url("/assets/image/Banner.jpg") center, #f9f9f9;
-  background-size: cover;
-  height: calc(100vh - 106px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  #inicio .tag-titulo-banner {
-    color: #5cad88;
-    line-height: normal;
-    margin-bottom: 25px; }
-  #inicio a.botao-vermelho {
-    color: #ffffff; }
+  background: #f9f9f9; }
+  #inicio .owl-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #inicio .owl-carousel .item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: calc(100vh -116px);
+      width: auto; }
+      #inicio .owl-carousel .item img {
+        width: 100%;
+        height: auto;
+        -o-object-fit: contain;
+        object-fit: contain; }
+    #inicio .owl-carousel div.owl-nav {
+      display: none; }
+    #inicio .owl-carousel div.owl-dots .owl-dot {
+      display: none; }
 
 #sobre {
   background: #ffffff;
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  overflow: hidden; }
   #sobre .col-12.col-lg-6 {
     margin: 30px 0px; }
+  #sobre .container {
+    position: relative;
+    z-index: 10; }
+  #sobre .topo-esquerdo {
+    position: absolute;
+    top: 55px;
+    left: -55px;
+    z-index: 0; }
+  #sobre .baixo-esquerdo {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    left: -120px; }
+  #sobre .topo-direito {
+    position: absolute;
+    top: 25px;
+    right: -210px;
+    z-index: 0; }
   #sobre .tag-secao {
-    color: #ED2129;
+    color: #ed2129;
     margin-bottom: 10px;
     line-height: 1.4;
     letter-spacing: 1.62px; }
@@ -348,8 +374,15 @@ header {
     height: 70%;
     width: auto;
     z-index: 0; }
+  #produtos .baixo-esquerdo {
+    position: absolute;
+    bottom: 100px;
+    z-index: 0;
+    left: -50px; }
   #produtos .container {
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    z-index: 10; }
     #produtos .container .tag-subtitulo {
       color: #ffffff;
       letter-spacing: 2.7px;
@@ -428,14 +461,6 @@ header {
         display: none; }
     #produtos .container a.botao-vermelho {
       color: #ffffff; }
-  #produtos .container:before {
-    content: url("/assets/svg/Grupo 34.svg");
-    position: absolute;
-    left: 15%;
-    bottom: 135px;
-    height: 15%;
-    width: auto;
-    z-index: 0; }
 
 #servicos {
   background: #ffffff;
@@ -473,13 +498,35 @@ header {
 
 #clientes {
   background: #f9f9f9;
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #clientes .meio-direita {
+    position: absolute;
+    z-index: 0;
+    right: -100px;
+    height: 100%; }
   #clientes .tag-subtitulo {
     color: #2d5b48;
     letter-spacing: 2.7px;
     text-align: center;
     margin-bottom: 50px;
     font-weight: 700; }
+  #clientes .container {
+    position: relative;
+    z-index: 10; }
+  #clientes .topo-esquerda {
+    position: absolute;
+    z-index: 0;
+    top: 35px;
+    left: -60px; }
   #clientes .owl-carousel {
     margin-top: 50px; }
     #clientes .owl-carousel .item {
@@ -530,22 +577,48 @@ header {
 
 #fique-por-dentro {
   background: #ffffff;
-  padding: 50px 0px; }
+  padding: 50px 0px;
+  overflow: hidden; }
   #fique-por-dentro .tag-subtitulo {
     color: #2d5b48;
     letter-spacing: 2.7px;
     text-align: center;
     margin-bottom: 50px;
     font-weight: 700; }
-  #fique-por-dentro .imagens {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (2fr)[6];
-    grid-template-columns: repeat(6, 2fr);
-    grid-gap: 5px;
+  #fique-por-dentro .container {
+    position: relative;
+    z-index: 10; }
+  #fique-por-dentro .topo-direita {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    right: -115px; }
+  #fique-por-dentro .owl-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 50px;
     margin-bottom: 50px; }
-    #fique-por-dentro .imagens img {
-      width: 100%; }
+    #fique-por-dentro .owl-carousel .item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: auto; }
+      #fique-por-dentro .owl-carousel .item img {
+        width: 100%;
+        height: auto;
+        -o-object-fit: contain;
+        object-fit: contain; }
+    #fique-por-dentro .owl-carousel div.owl-nav {
+      display: none; }
+    #fique-por-dentro .owl-carousel div.owl-dots .owl-dot {
+      display: none; }
   #fique-por-dentro .linha-instagram {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -644,8 +717,29 @@ header {
 #contato {
   padding: 50px 0px;
   background: #fcfcfc;
-  position: relative; }
-  #contato .row:before {
+  position: relative;
+  overflow: hidden; }
+  #contato .container {
+    position: relative;
+    z-index: 10; }
+  #contato .meio-esquerda {
+    position: absolute;
+    z-index: 0;
+    left: -80px;
+    background: transparent; }
+  #contato .nos-encontre {
+    position: absolute;
+    z-index: 0;
+    top: 65px;
+    left: -125px;
+    background: transparent; }
+  #contato .lado-formulario {
+    position: absolute;
+    z-index: 0;
+    top: 110px;
+    right: -130px;
+    background: transparent; }
+  #contato .fundo-verde:before {
     content: " ";
     background-image: -webkit-linear-gradient(129deg, #19784e, #0b5e39);
     background-image: -o-linear-gradient(129deg, #19784e, #0b5e39);
@@ -668,7 +762,7 @@ header {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    z-index: 1; }
+    z-index: 11; }
   #contato .coluna1 .tag-titulo {
     color: #136f46;
     margin-bottom: 25px; }

@@ -360,19 +360,13 @@ header {
   // }
 
   .owl-carousel {
-    display: flex;
-    align-items: center;
-
+    
     .item {
-      display: flex;
-      align-items: center;
-      height: calc(100vh -116px);
-      width: auto;
-
-      img {
+      
+      img{
+        height: calc(100vh - 116px);
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
 

@@ -71,6 +71,7 @@ a.botao-vermelho {
 
 a.botao-vermelho:hover{
   background: rgba(#ed2129, .9);
+  transition: 0.7s;
 }
 
 @media screen and (max-width: 991px) {
@@ -177,6 +178,7 @@ header {
 
         a.nav-link:hover{
           border: 1px solid #ffffff;
+          transition: 0.7s;
         }
       }
       li.nav-item:first-child {
@@ -725,10 +727,12 @@ header {
 
       .owl-prev:hover {
         background: url("/assets/svg/left-clientes.svg") center no-repeat, #1b955f;
+        transition: 0.7s;
       }
 
       .owl-next:hover {
         background: url("/assets/svg/right-clientes.svg") center no-repeat, #1b955f;
+        transition: 0.7s;
       }
     }
     div.owl-dots {
@@ -988,6 +992,7 @@ footer {
       a:hover {
         color: #ffffff;
         font-weight: 400;
+        transition: 0.7s;
       }
 
       img {

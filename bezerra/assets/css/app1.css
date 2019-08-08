@@ -62,7 +62,10 @@ a.botao-vermelho {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); }
 
 a.botao-vermelho:hover {
-  background: rgba(237, 33, 41, 0.9); }
+  background: rgba(237, 33, 41, 0.9);
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s; }
 
 @media screen and (max-width: 991px) {
   .tag-titulo {
@@ -150,7 +153,10 @@ header {
             margin-right: 10px;
             fill: #ffffff; }
         header nav.navbar ul.navbar-nav li.nav-item a.nav-link:hover {
-          border: 1px solid #ffffff; }
+          border: 1px solid #ffffff;
+          -webkit-transition: 0.7s;
+          -o-transition: 0.7s;
+          transition: 0.7s; }
       header nav.navbar ul.navbar-nav li.nav-item:first-child {
         margin-left: 0; }
 
@@ -566,9 +572,15 @@ header {
         border-radius: 50%;
         background: url("/assets/svg/right-clientes.svg") center no-repeat, #d2d1d1; }
       #clientes .owl-carousel div.owl-nav .owl-prev:hover {
-        background: url("/assets/svg/left-clientes.svg") center no-repeat, #1b955f; }
+        background: url("/assets/svg/left-clientes.svg") center no-repeat, #1b955f;
+        -webkit-transition: 0.7s;
+        -o-transition: 0.7s;
+        transition: 0.7s; }
       #clientes .owl-carousel div.owl-nav .owl-next:hover {
-        background: url("/assets/svg/right-clientes.svg") center no-repeat, #1b955f; }
+        background: url("/assets/svg/right-clientes.svg") center no-repeat, #1b955f;
+        -webkit-transition: 0.7s;
+        -o-transition: 0.7s;
+        transition: 0.7s; }
     #clientes .owl-carousel div.owl-dots .owl-dot {
       display: none; }
 
@@ -683,7 +695,10 @@ header {
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
   .form-group .botao-vermelho:hover {
-    background: rgba(237, 33, 41, 0.9); }
+    background: rgba(237, 33, 41, 0.9);
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s; }
 
 .form-group:last-child {
   text-align: right; }
@@ -841,7 +856,10 @@ footer {
         font-weight: 400; }
       footer ul li a:hover {
         color: #ffffff;
-        font-weight: 400; }
+        font-weight: 400;
+        -webkit-transition: 0.7s;
+        -o-transition: 0.7s;
+        transition: 0.7s; }
       footer ul li img {
         width: 20px;
         height: 20px;

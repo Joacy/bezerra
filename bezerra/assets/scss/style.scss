@@ -25,7 +25,7 @@
     border-bottom: 1px solid #ffffff;
     color: #ffffff;
   }
-  
+
   .botao-vermelho {
     font-size: 17px;
     font-weight: 900;
@@ -35,6 +35,9 @@
     padding: 15px 25px;
     text-transform: uppercase;
     box-shadow: 0px 0px 20px rgba(#000000, 0.3);
+  }
+  .botao-vermelho:hover {
+    background: rgba(#ed2129, 0.9);
   }
 }
 

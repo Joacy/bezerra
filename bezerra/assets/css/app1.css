@@ -802,7 +802,7 @@ header {
     background-image: -webkit-linear-gradient(129deg, #19784e, #0b5e39);
     background-image: -o-linear-gradient(129deg, #19784e, #0b5e39);
     background-image: linear-gradient(321deg, #19784e, #0b5e39); }
-    #contato .row:before {
+    #contato .fundo-verde:before {
       display: none; }
     #contato .coluna1 .tag-titulo {
       color: #ffffff; }

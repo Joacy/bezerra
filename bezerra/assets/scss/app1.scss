@@ -124,6 +124,8 @@ header {
     align-items: center;
     background: transparent;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 
     a.navbar-brand {
       display: flex;
@@ -186,6 +188,15 @@ header {
 
 @media screen and (max-width: 1199px) {
   header {
+    background-image: linear-gradient(
+      -60deg,
+      #1a935e 0%,
+      #1a935e 65%,
+      #ed2129 65%,
+      #ed2129 66%,
+      #ffffff 66%,
+      #ffffff 100%
+    );
     nav.navbar {
       a.navbar-brand {
         img.bezerra {
@@ -231,14 +242,14 @@ header {
       a.navbar-brand {
         img.bezerra {
           padding: 5px 0;
-          height: 45px;
+          height: 40px;
           width: auto;
           margin-right: 10px;
         }
         img.trinta {
-          height: 50px;
+          height: 45px;
           width: auto;
-          margin-right: 10px;
+          margin-right: 20px;
         }
       }
 
@@ -252,13 +263,13 @@ header {
 
       ul.navbar-nav {
         li.nav-item {
-          margin-left: 10px;
+          margin-left: 5px;
           a.nav-link {
             img {
-              width: 13px;
-              height: 13px;
+              width: 12px;
+              height: 12px;
             }
-            font-size: 13px;
+            font-size: 12px;
           }
         }
         li.nav-item:first-child {

@@ -99,7 +99,9 @@ header {
     -ms-flex-align: center;
     align-items: center;
     background: transparent;
-    width: 100%; }
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
     header nav.navbar a.navbar-brand {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -153,50 +155,54 @@ header {
         margin-left: 0; }
 
 @media screen and (max-width: 1199px) {
-  header nav.navbar a.navbar-brand img.bezerra {
-    padding: 5px 0;
-    height: 55px;
-    width: auto;
-    margin-right: 10px; }
-  header nav.navbar a.navbar-brand img.trinta {
-    height: 60px;
-    width: auto;
-    margin-right: 10px; }
-  header nav.navbar button.navbar-toggler {
-    background: none;
-    border: none; }
-  header nav.navbar ul.navbar-nav li.nav-item {
-    margin-left: 15px; }
-    header nav.navbar ul.navbar-nav li.nav-item a.nav-link {
-      font-size: 14px; }
-      header nav.navbar ul.navbar-nav li.nav-item a.nav-link img {
-        width: 14px;
-        height: 14px; }
-  header nav.navbar ul.navbar-nav li.nav-item:first-child {
-    margin-left: 0; } }
+  header {
+    background-image: -webkit-linear-gradient(150deg, #1a935e 0%, #1a935e 65%, #ed2129 65%, #ed2129 66%, #ffffff 66%, #ffffff 100%);
+    background-image: -o-linear-gradient(150deg, #1a935e 0%, #1a935e 65%, #ed2129 65%, #ed2129 66%, #ffffff 66%, #ffffff 100%);
+    background-image: linear-gradient(-60deg, #1a935e 0%, #1a935e 65%, #ed2129 65%, #ed2129 66%, #ffffff 66%, #ffffff 100%); }
+    header nav.navbar a.navbar-brand img.bezerra {
+      padding: 5px 0;
+      height: 55px;
+      width: auto;
+      margin-right: 10px; }
+    header nav.navbar a.navbar-brand img.trinta {
+      height: 60px;
+      width: auto;
+      margin-right: 10px; }
+    header nav.navbar button.navbar-toggler {
+      background: none;
+      border: none; }
+    header nav.navbar ul.navbar-nav li.nav-item {
+      margin-left: 15px; }
+      header nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+        font-size: 14px; }
+        header nav.navbar ul.navbar-nav li.nav-item a.nav-link img {
+          width: 14px;
+          height: 14px; }
+    header nav.navbar ul.navbar-nav li.nav-item:first-child {
+      margin-left: 0; } }
 
 @media screen and (max-width: 991px) {
   header nav.navbar a.navbar-brand img.bezerra {
     padding: 5px 0;
-    height: 45px;
+    height: 40px;
     width: auto;
     margin-right: 10px; }
   header nav.navbar a.navbar-brand img.trinta {
-    height: 50px;
+    height: 45px;
     width: auto;
-    margin-right: 10px; }
+    margin-right: 20px; }
   header nav.navbar button.navbar-toggler {
     background: none;
     border: none; }
     header nav.navbar button.navbar-toggler span.navbar-toggler-icon {
       color: #ffffff; }
   header nav.navbar ul.navbar-nav li.nav-item {
-    margin-left: 10px; }
+    margin-left: 5px; }
     header nav.navbar ul.navbar-nav li.nav-item a.nav-link {
-      font-size: 13px; }
+      font-size: 12px; }
       header nav.navbar ul.navbar-nav li.nav-item a.nav-link img {
-        width: 13px;
-        height: 13px; }
+        width: 12px;
+        height: 12px; }
   header nav.navbar ul.navbar-nav li.nav-item:first-child {
     margin-left: 0; } }
 
